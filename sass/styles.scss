@@ -52,34 +52,35 @@ header {
   }
 
   .checkout-steps {
-      height: 56px;
-      display: flex;
-      align-items: flex-end;
-      background: $grey-1;
-      width: 100%;
-      justify-content: space-between;
-      padding: 0 16px;
-      box-sizing: border-box;
+    height: 56px;
+    display: grid;
+    align-items: flex-end;
+    background: #EDEDED;
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+    grid-column-gap: 4px;
+    grid-template-columns: repeat(3, 1fr);
 
-      .checkout-step {
-          height: 44px;
-          border-radius: 2px 2px 0 0;
-          opacity: 0.5;
-          background: white;
-          color: $grey-2;
-          width: 94px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 12px;
+    .checkout-step {
+        height: 44px;
+        border-radius: 2px 2px 0 0;
+        opacity: 0.5;
+        background: white;
+        color: $grey-2;
+        flex: 1 0 33%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
 
-          &.active {
-              color: $primary-color;
-              opacity: 1;
-              
-              &.complete {
-                  opacity: 0.5;
-              }
-          }
-      }
-  }
+        &.active {
+            color: $primary-color;
+            opacity: 1;
+
+            &.complete {
+                opacity: 0.5;
+            }
+        }
+    }
+}
