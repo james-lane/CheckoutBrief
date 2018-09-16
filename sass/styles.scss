@@ -9,3 +9,12 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid $grey-1;
+    width: 100%;
+    min-height: 64px;
+}
