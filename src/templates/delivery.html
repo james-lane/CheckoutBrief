@@ -1,0 +1,42 @@
+{% extends 'layout.njk' %}
+
+{% block mainContent %}
+
+    <section>
+        <div class="checkout-steps">
+        {% block checkoutSteps %}
+            <a class="checkout-step details-step complete">Details</a>
+            <a class="checkout-step delivery-step active">Delivery</a>
+            <a class="checkout-step payment-step">Payment</a>
+        {% endblock %}
+        </div>
+    </section>
+    <section class="delivery-intro">
+        <h1>Delivery Address</h1>
+        <p>Select from the options below.</p>
+    </section>
+    <section>
+        <form class="delivery-address-select" action="#">
+            <div>
+                <input type="radio" name="billingAddress" id="billingAddress" checked />
+                <label for="billingAddress">Use Billing Address</label>
+            </div>
+            <div>
+                <input type="radio" name="newAddress" id="newAddress" />
+                <label for="newAddress">Enter New Address</label>
+            </div>
+            <div>
+                <input type="radio" name="clickAndCollect" id="clickAndCollect" />
+                <label for="clickAndCollect">Click and Collect</label>
+            </div>
+        </form>
+    </section>
+    <section class="continue">
+        <h1>Keep In Touch</h1>
+        <p>We love to keep you up to date with news on our latest new arrivals, offers & promotions. Would you like us to send Email and Postal communications? This can be changed later.</p>
+        <a href="delivery.html" class="btn-primary">Sure! Continue to Delivery</a>
+        <a href="delivery.html" class="btn-secondary">No Thanks, Continue Anyway</a>
+    </section>
+
+{% endblock %}
+

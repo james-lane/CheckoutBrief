@@ -1,0 +1,26 @@
+// Buttons
+
+button[class^="btn"],
+a[class^="btn"] {
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0;
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 16px;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: $primary-color;
+    color: white;
+}
+
+.btn-secondary {
+    background: $grey-1;
+    color: $grey-3;
+}

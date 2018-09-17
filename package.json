@@ -1,0 +1,17 @@
+{
+    "name": "Matalan Checkout Brief",
+    "version": "1.0.0",
+    "description": "Matalan Checkout Brief",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/james-lane/CheckoutBrief"
+    },
+    "author": "James Lane",
+    "devDependencies": {
+        "@fortawesome/fontawesome-pro": "^5.3.1",
+        "gulp-autoprefixer": "^6.0.0",
+        "gulp-nunjucks-render": "^2.2.2",
+        "gulp-sourcemaps": "^2.6.4",
+        "nunjucks": "^3.1.3"
+    }
+}
