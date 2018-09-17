@@ -1,0 +1,55 @@
+{% extends 'layout.njk' %}
+
+{% block mainContent %}
+
+    <section>
+        <div class="checkout-steps">
+        {% block checkoutSteps %}
+            <a class="checkout-step details-step complete">Details</a>
+            <a class="checkout-step delivery-step complete">Delivery</a>
+            <a class="checkout-step payment-step active">Payment</a>
+        {% endblock %}
+        </div>
+    </section>
+    <section class="review-details">
+        <a href="#" class="btn-secondary">Review Details and Delivery</a>
+    </div>
+    <section class="payment-intro">
+        <h1>Payment Method</h1>
+        <p>Select from the options below.</p>
+    </section>
+    <section>
+        <div class="payment-options">
+            <a href="#" class="option-visa active">
+                <img src="images/Visa.svg" />
+            </a>
+            <a href="#" class="option-visapay">
+                <img src="images/VisaPay.svg" />
+            </a>
+            <a href="#" class="option-mastercard">
+                <img src="images/Mastercard.svg" />
+            </a>
+            <a href="#" class="option-maestro">
+                <img src="images/Maestro.svg" />
+            </a>
+            <a href="#" class="option-paypal">
+                <img src="images/Paypal.svg" />
+            </a>
+        </div>
+    </section>
+    <section class="payment-details">
+        <form action="#">
+            <input type="text" placeholder="Card Number" name="cardNumber" id="cardNumber">
+            <input type="text" placeholder="MM" name="cardMonth" id="cardMonth">
+            <input type="text" placeholder="YYYY" name="cardYear" id="cardYear">
+            <input type="text" placeholder="CVV" name="cardCVV" id="cardCVV">
+            <div class="cvv-help">
+                <img src="images/card-back.svg" />
+                <a href="#" class="cvv-help-btn"></a>
+            </div>
+            <a href="complete.html" class="btn-primary">Pay Securely</a>
+        </form>
+    </section>
+
+{% endblock %}
+

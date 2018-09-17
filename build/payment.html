@@ -19,36 +19,57 @@
     <div class="container">
         <div class="main-content">
             
-                <section>
-                    <div class="checkout-steps">
-                        
-                            <a class="checkout-step details-step active">Details</a>
-                            <a class="checkout-step delivery-step">Delivery</a>
-                            <a class="checkout-step payment-step">Payment</a>
-                        
-                    </div>
-                </section>
-                <section class="billing-intro">
-                    <h1>Billing Address</h1>
-                    <p>Your billing address must match your statement address.</p>
-                </section>
-                <section class="billing-details">
-                    <form action="#">
-                        <input type="text" placeholder="First Name" name="firstName" id="firstName">
-                        <input type="text" placeholder="Last Name" name="lastName" id="lastName">
-                        <input type="text" placeholder="Email Address" name="emailAddress" id="emailAddress">
-                        <input type="text" placeholder="Postcode" name="postcode" id="postcode">
-                        <button class="btn-secondary">Find Address</button>
-                        <a class="alt-link">Manually Enter Address</a>
-                    </form>
-                </section>
-                <section class="continue">
-                    <h1>Keep In Touch</h1>
-                    <p>We love to keep you up to date with news on our latest new arrivals, offers & promotions. Would you like us to send Email and Postal communications? This can be changed later.</p>
-                    <a href="delivery.html" class="btn-primary">Sure! Continue to Delivery</a>
-                    <a href="delivery.html" class="btn-secondary">No Thanks, Continue Anyway</a>
-                </section>
-            
+
+    <section>
+        <div class="checkout-steps">
+        
+            <a class="checkout-step details-step complete">Details</a>
+            <a class="checkout-step delivery-step complete">Delivery</a>
+            <a class="checkout-step payment-step active">Payment</a>
+        
+        </div>
+    </section>
+    <section class="review-details">
+        <a href="#" class="btn-secondary">Review Details and Delivery</a>
+    </div>
+    <section class="payment-intro">
+        <h1>Payment Method</h1>
+        <p>Select from the options below.</p>
+    </section>
+    <section>
+        <div class="payment-options">
+            <a href="#" class="option-visa active">
+                <img src="images/Visa.svg" />
+            </a>
+            <a href="#" class="option-visapay">
+                <img src="images/VisaPay.svg" />
+            </a>
+            <a href="#" class="option-mastercard">
+                <img src="images/Mastercard.svg" />
+            </a>
+            <a href="#" class="option-maestro">
+                <img src="images/Maestro.svg" />
+            </a>
+            <a href="#" class="option-paypal">
+                <img src="images/Paypal.svg" />
+            </a>
+        </div>
+    </section>
+    <section class="payment-details">
+        <form action="#">
+            <input type="text" placeholder="Card Number" name="cardNumber" id="cardNumber">
+            <input type="text" placeholder="MM" name="cardMonth" id="cardMonth">
+            <input type="text" placeholder="YYYY" name="cardYear" id="cardYear">
+            <input type="text" placeholder="CVV" name="cardCVV" id="cardCVV">
+            <div class="cvv-help">
+                <img src="images/card-back.svg" />
+                <a href="#" class="cvv-help-btn"></a>
+            </div>
+            <a href="complete.html" class="btn-primary">Pay Securely</a>
+        </form>
+    </section>
+
+
         </div>
         <section class="shopping-bag">
             <div class="shopping-bag-content">

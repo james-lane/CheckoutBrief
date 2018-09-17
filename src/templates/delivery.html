@@ -18,24 +18,48 @@
     <section>
         <form class="delivery-address-select" action="#">
             <div>
-                <input type="radio" name="billingAddress" id="billingAddress" checked />
+                <input type="radio" name="deliveryAddressType" id="billingAddress" checked />
                 <label for="billingAddress">Use Billing Address</label>
             </div>
             <div>
-                <input type="radio" name="newAddress" id="newAddress" />
+                <input type="radio" name="deliveryAddressType" id="newAddress" />
                 <label for="newAddress">Enter New Address</label>
             </div>
             <div>
-                <input type="radio" name="clickAndCollect" id="clickAndCollect" />
+                <input type="radio" name="deliveryAddressType" id="clickAndCollect" />
                 <label for="clickAndCollect">Click and Collect</label>
             </div>
         </form>
     </section>
-    <section class="continue">
-        <h1>Keep In Touch</h1>
-        <p>We love to keep you up to date with news on our latest new arrivals, offers & promotions. Would you like us to send Email and Postal communications? This can be changed later.</p>
-        <a href="delivery.html" class="btn-primary">Sure! Continue to Delivery</a>
-        <a href="delivery.html" class="btn-secondary">No Thanks, Continue Anyway</a>
+    <section class="billing-address">
+        <p>James Lane<br/>
+        Matalan Perimeter Road,<br/>
+        Knowsley Industrial Park,<br/>
+        Knowsley,<br/>
+        Liverpool<br/>
+        L33 7SZ<br/>
+        UK</p>
+    </section>
+    <section class="delivery-method">
+        <h1>Delivery Method</h1>
+        <p>Select from the options below.</p>
+    </section>
+    <section>
+        <form class="delivery-method-select" action="#">
+            <div>
+                <input type="radio" name="deliveryMethod" id="standard" checked />
+                <label for="standard">Standard Delivery - £2.95</label>
+            </div>
+            <div>
+                <input type="radio" name="deliveryMethod" id="nextDay" />
+                <label for="nextDay">Next Day Delivery - £4.99</label>
+            </div>
+            <div>
+                <input type="radio" name="deliveryMethod" id="nominatedDay" />
+                <label for="nominatedDay">Nominated Delivery - £4.99</label>
+            </div>
+            <a href="payment.html" class="btn-primary">Continue to Payment</a>
+        </form>
     </section>
 
 {% endblock %}

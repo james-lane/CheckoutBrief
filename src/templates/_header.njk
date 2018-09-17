@@ -1,6 +1,10 @@
 <header>
     <img class="logo" src="images/matalan-logo.svg" />
-    <div class="bag-icon">
-        <span class="bag-count">1</span>
-    </div>
+    {% if headerIcon === 'home' %}
+        <a href="index.html" class="home-icon"></a>
+    {% else %}
+        <a class="bag-icon">
+            <span class="bag-count">1</span>
+        </a>
+    {% endif %}
 </header>

@@ -1,0 +1,22 @@
+{% extends 'layout.njk' %}
+{% set headerIcon = 'home' %}
+
+{% block mainContent %}
+
+    <section class="order-complete">
+        <h1>Your order is on it’s way!</h1>
+        <p>Order #123456</p>
+        <a href="#" class="btn-secondary">View Order Details</a>
+    </section>
+    <section class="create-account">
+        <section class="shop-quicker">
+            <h1>Shop Quicker</h1>
+            <p>Enter a password to create an account and we’ll save your details for next time.</p>
+            <input type="text" placeholder="Create Password" name="createPassword" id="createPassword">
+            <input type="text" placeholder="Confirm Password" name="confirmPassword" id="confirmPassword">
+            <a href="index.html" class="btn-primary">Create Account</a>
+        </section>
+    </section>
+
+{% endblock %}
+
