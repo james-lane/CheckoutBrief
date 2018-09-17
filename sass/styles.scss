@@ -6,6 +6,7 @@
 
 @import "fa/fontawesome.scss";
 @import "fa/light.scss";
+@import "fa/solid.scss";
 
 body {
     font-family: $font-family;
@@ -25,12 +26,12 @@ header {
 }
 
 .bag-icon {
-    @extend %fa-icon;
-    @extend .fal;
   
     &:before {
-      content: fa-content($fa-var-shopping-bag);
-      font-size: 1.5em;
+        @extend %fa-icon;
+        @extend .fal;
+        content: fa-content($fa-var-shopping-bag);
+        font-size: 1.5em;
     }
 
     position: absolute;
@@ -47,7 +48,6 @@ header {
         padding: 4px 8px;
         border-radius: 100px;
         font-size: 10px;
-        font-family: $font-family;
     }
   }
 
@@ -81,6 +81,27 @@ header {
             &.complete {
                 opacity: 0.5;
             }
+        }
+        
+        &.details-step:before {
+            @extend %fa-icon;
+            @extend .fas;
+            content: fa-content($fa-var-user);
+            margin-right: 4px;
+        }
+        
+        &.delivery-step:before {
+            @extend %fa-icon;
+            @extend .fas;
+            content: fa-content($fa-var-truck);
+            margin-right: 4px;
+        }
+        
+        &.payment-step:before {
+            @extend %fa-icon;
+            @extend .fas;
+            content: fa-content($fa-var-pound-sign);
+            margin-right: 4px;
         }
     }
 }
