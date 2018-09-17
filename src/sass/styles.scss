@@ -12,6 +12,9 @@ body {
     font-family: $font-family;
     color: #4A4A4A;
     letter-spacing: 0.32px;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
 }
 
 h1 {
@@ -86,6 +89,7 @@ header {
     border-bottom: 2px solid $grey-1;
     width: 100%;
     min-height: 64px;
+    flex: 0 0 auto;
     .logo {
         max-height: 16px;
         width: auto;
@@ -227,6 +231,7 @@ footer {
     background: $grey-1;
     flex: 1 0 100%;
     box-sizing: border-box;
+    flex: 0 0 auto;
 
     .payment-types {
         display: flex;
@@ -407,6 +412,7 @@ footer {
 
     .container {
         display: flex;
+        flex: 1 0 auto;
     }
 
     .main-content {
