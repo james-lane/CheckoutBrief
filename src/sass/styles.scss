@@ -396,15 +396,102 @@ footer {
     margin-top: 24px;
     padding: 8px;
     display: flex;
-    flex-flow: column;
+    flex-flow: row wrap;
 
-    img {
-        max-width: 70px;
+    .product-details {
+        display: flex;
+        flex-flow: row;
+
+        .product-details-column:first-child {
+            flex: 0 0 70px;
+            margin-right: 16px;
+        }
+
+        .product-details-column:last-child {
+            flex: 0 1 auto;
+        }
+
+        img {
+            max-width: 70px;
+        }
+
+        p {
+            font-size: 12px;
+            color: $grey-2;
+        }
+        
+        p.product-title {
+            color: $grey-3;
+            line-height: 16px;
+        }
+
+        .product-colour span {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: #603265;
+            border-radius: 16px;
+        }
+
+        .product-size span {
+            color: $grey-3;
+        }
     }
 
-    .product-total {
-        margin-top: 2px solid $grey-2;
+    p.product-total,
+    .product-card-options {
+        border-top: 2px solid $grey-1;
+    }
+
+    p.product-total {
+        padding-top: 6px;
+        width: 100%;
+        text-align: right;
+        font-size: 12px;
+    }
+
+    .product-card-options {
+        margin-top: 5px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
         padding: 8px;
+    }
+
+    p.remove-product,
+    p.product-quantity {
+        font-size: 12px;
+    }
+
+    p.remove-product {
+        display: flex;
+        align-items: center;    
+        color: $grey-2;
+
+        &:before {
+            @extend %fa-icon;
+            @extend .fal;
+            content: fa-content($fa-var-trash-alt);
+            margin-right: 6px;
+        }
+    }
+
+    p.product-quantity {
+        color: $grey-3;
+
+        span {
+            font-size: 16px;
+
+            a.product-minus {
+                color: $grey-2;
+                margin-right: 8px;
+                margin-left: 6px;
+            }
+
+            a.product-plus {
+                margin-left: 8px;
+            }
+        }
     }
 }
 
