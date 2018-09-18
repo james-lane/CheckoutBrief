@@ -9,7 +9,9 @@
 </head>
 <body>
     <header>
-    <img class="logo" src="images/matalan-logo.svg" />
+    <a href="index.html">
+        <img class="logo" src="images/matalan-logo.svg" />
+    </a>
     
         <a href="index.html" class="home-icon"></a>
     
@@ -24,13 +26,17 @@
         <a href="#" class="btn-secondary">View Order Details</a>
     </section>
     <section class="create-account">
-        <section class="shop-quicker">
-            <h1>Shop Quicker</h1>
-            <p>Enter a password to create an account and we’ll save your details for next time.</p>
-            <input type="text" placeholder="Create Password" name="createPassword" id="createPassword">
-            <input type="text" placeholder="Confirm Password" name="confirmPassword" id="confirmPassword">
-            <a href="index.html" class="btn-primary">Create Account</a>
-        </section>
+        <div class="shop-quicker">
+            <div class="shop-quicker-intro">
+                <h1>Shop Quicker</h1>
+                <p>Enter a password to create an account and we’ll save your details for next time.</p>
+            </div>
+            <div class="account-details">
+                <input type="text" placeholder="Create Password" name="createPassword" id="createPassword">
+                <input type="text" placeholder="Confirm Password" name="confirmPassword" id="confirmPassword">
+                <a href="index.html" class="btn-primary">Create Account</a>
+            </div>
+        </div>
     </section>
 
 
@@ -48,5 +54,6 @@
     </div>
     <p>© Copyright 2018 - Matalan Perimeter Road, Knowsley Industrial Park, Knowsley, Liverpool L33 7SZ, UK</p>
 </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>

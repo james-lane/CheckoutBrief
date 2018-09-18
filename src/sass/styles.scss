@@ -157,6 +157,7 @@ header {
         align-items: center;
         justify-content: center;
         font-size: 12px;
+        text-decoration: none;
 
         &.active {
             color: $primary-color;
@@ -383,6 +384,20 @@ footer {
 
 .shopping-bag-content {
     width: 100%;
+
+    input {
+        margin-bottom: 24px;
+    }
+}
+
+p.sub-total {
+    color: $grey-2;
+    font-size: 12px;
+    margin-bottom: 17px;
+
+    span {
+        color: $grey-3;
+    }
 }
 
 .product-cards {
@@ -504,6 +519,8 @@ footer {
 
     .main-content {
         flex: 1 1 auto;
+        display: flex;
+        flex-flow: column;
     }
     .shopping-bag {
         display: flex;
@@ -513,5 +530,57 @@ footer {
         border-left: 2px solid $grey-1;
         padding: 24px;
         max-width: 290px;
+    }
+
+    .billing-details,
+    .delivery-address-select,
+    .delivery-method-select {
+        padding: 0 32px;
+    }
+
+    .billing-intro,
+    .delivery-intro,
+    .delivery-method,
+    .payment-method {
+        padding: 32px 48px;
+    }
+    
+    section.continue,
+    section.create-account {
+        margin: 0 32px;
+    }
+
+    .payment-details {
+        padding: 32px 16px 32px;
+        max-width: 288px;
+        margin: 0 auto;
+    }
+
+    .shop-quicker {
+        display: flex;
+    }
+
+    .account-details {
+        padding-right: 32px;
+        margin-left: 40px;
+        flex: 0 0 288px;
+    }
+
+    .order-complete {
+        display: flex;
+        justify-content: center;
+        flex: 1;
+    }
+
+    section.create-account {
+        flex: 0 1 auto;
+        justify-self: flex-end;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .shopping-bag {
+        flex: 0 0 350px;
+        max-width: 350px;
     }
 }
