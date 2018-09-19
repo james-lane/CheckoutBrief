@@ -301,6 +301,7 @@ footer {
         padding: 8px 0;
         flex: 1 0 20%;
         box-sizing: border-box;
+        min-height: 44px;
         &:last-child {
             border-right: 0;
         }
