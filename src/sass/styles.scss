@@ -252,6 +252,15 @@ footer {
         font-size: 12px;
         line-height: 18px;
         padding: 0 16px;
+        margin-bottom: 8px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    a {
+        color: $grey-3;
     }
 }
 
